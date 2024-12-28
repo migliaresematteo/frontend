@@ -24,10 +24,10 @@ services:
 
   - type: web
     name: frontend
-    env: node
+    env: static
     rootDir: frontend
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    staticPublishPath: ./build
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
