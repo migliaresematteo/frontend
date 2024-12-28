@@ -2,6 +2,7 @@ services:
   - type: web
     name: strapi
     env: node
+    plan: starter
     rootDir: backend
     buildCommand: npm install && npm run build
     startCommand: npm start
@@ -22,13 +23,13 @@ services:
       - key: API_TOKEN_SALT
         generateValue: true
 
-  - type: static
+  - type: web
     name: frontend
-    buildCommand: cd frontend && npm install && npm run build
-    staticPublishPath: frontend/build
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
     pullRequestPreviewsEnabled: true
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
-      - key: NODE_ENV
-        value: production
