@@ -22,12 +22,11 @@ services:
       - key: API_TOKEN_SALT
         generateValue: true
 
-  - type: web
+  - type: static
     name: frontend
-    env: static
-    rootDir: frontend
-    buildCommand: npm install && npm run build
-    staticPublishPath: ./build
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    pullRequestPreviewsEnabled: true
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
