@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/strapi-react-app/static/css/main.b81fa8fe.css",
-    "main.js": "/strapi-react-app/static/js/main.c9d1ac54.js",
-    "index.html": "/strapi-react-app/index.html",
-    "main.b81fa8fe.css.map": "/strapi-react-app/static/css/main.b81fa8fe.css.map",
-    "main.c9d1ac54.js.map": "/strapi-react-app/static/js/main.c9d1ac54.js.map"
+    "main.css": "/lessona/static/css/main.b81fa8fe.css",
+    "main.js": "/lessona/static/js/main.c9d1ac54.js",
+    "index.html": "/lessona/index.html",
+    "main.b81fa8fe.css.map": "/lessona/static/css/main.b81fa8fe.css.map",
+    "main.c9d1ac54.js.map": "/lessona/static/js/main.c9d1ac54.js.map"
   },
   "entrypoints": [
     "static/css/main.b81fa8fe.css",
