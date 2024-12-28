@@ -21,3 +21,15 @@ services:
         generateValue: true
       - key: API_TOKEN_SALT
         generateValue: true
+
+  - type: web
+    name: frontend
+    env: node
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: NODE_ENV
+        value: production
